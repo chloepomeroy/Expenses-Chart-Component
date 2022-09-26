@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    font-size: 18px;
+    font-family: "DM Sans";
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+}
+
+.container .balance {
+    background-color: hsl(10, 79%, 65%);
+    color: #ffff;
+    margin: 1rem 0rem;
+    padding: 1rem 1.5rem;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .balance img {
+    max-height: 40px;
+    display: grid;
+    justify-content: right;
+    align-items: center;
+}
+
+.container .bottomsect {
+    width: 325px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.container .spending {
+    width: 325px;    
+    background-color: #ffff;
+    color: hsl(25, 47%, 15%);
+    padding: 1rem;
+    border-radius: 9px;
+}
+
+.container {
+    max-width: 325px;
+    background-color: transparent;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    line-height: 0.25rem;
+    color: hsl(25, 47%, 15%);
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 1rem;
+    line-height: 0.25rem;
+    display: flex;
+    justify-content: right;    
+}
+
+p {
+    line-height: 0.5rem;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(28, 10%, 53%);
+}
+
+.container .balance .mybalance {
+    color: #ffff;
+    line-height: 10px;
+}
+
+.container .line {
+    height: 2px;
+    background-color: hsl(27, 66%, 92%);
+    border: none;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1rem;
+}
+
+#spendingtitle {
+    font-size: 1.5rem;
+}
+
+#total {
+    margin-top: 1.5rem;
+}
+
+#chart {
+    margin: 0rem 0 1.5rem 0;
+    max-height: 201px;
+    min-height: 200px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 600px) {
+    .container {
+        width: 375px
+    }
+
+    .container .balance {
+        border-radius: 1rem;
+        padding: 0.75rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    .container .spending {
+        border-radius: 1rem;
+        width: 375px;
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .container .bottomsect {
+        width: 375px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 14px
+    }
+
+    #spendingtitle {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 0.1rem;
+    }
+
+    #chart {
+        margin: 0rem 0 1.5rem 0;
+        max-height: 171px;
+        min-height: 170px;
+    }
+}
